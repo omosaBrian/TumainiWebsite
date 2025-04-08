@@ -63,10 +63,10 @@ const Header = () => {
             <div className="flex items-center">
               {/* Placeholder for School Logo */}
               <div className="h-14 w-24 sm:h-16 sm:w-28 bg-primary text-white flex items-center justify-center rounded shadow-sm">
-                <span className="font-bold">TKBHS</span>
+                <span className="font-bold">KTBHS</span>
               </div>
               <div className="ml-3 md:ml-4 hidden sm:block">
-                <h1 className="text-lg md:text-xl font-bold text-primary">Tumaini Kiage</h1>
+                <h1 className="text-lg md:text-xl font-bold text-primary">Kiage Tumaini</h1>
                 <h2 className="text-xs md:text-sm font-medium text-foreground">Boys High School</h2>
               </div>
             </div>

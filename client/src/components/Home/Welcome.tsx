@@ -50,7 +50,7 @@ const Welcome = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.3 }}
             >
-              Welcome to Tumaini Kiage Boys High School
+              Welcome to Kiage Tumaini Boys High School
             </motion.h2>
             <motion.div 
               className="h-1 w-24 bg-[#FFD700] mb-6"
@@ -64,10 +64,11 @@ const Welcome = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.7 }}
             >
-              Tumaini Kiage Boys High School is a premier educational institution 
-              committed to excellence in academics, character development, and holistic 
-              student growth. Since our establishment, we have maintained a tradition 
-              of nurturing young men who go on to make significant contributions to society.
+              Kiage Tumaini Boys High School is a premier educational institution 
+              located in Kitutu Chache South Sub County within Kisii County, in the Nyanza 
+              region of Kenya. Since our establishment, we have maintained a tradition 
+              of academic excellence, character development, and holistic student growth,
+              nurturing young men who go on to make significant contributions to society.
             </motion.p>
             
             {/* Mission highlights animation */}

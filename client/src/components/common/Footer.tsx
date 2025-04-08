@@ -84,9 +84,10 @@ const Footer = () => {
               <li className="flex items-start">
                 <MapPin className="mt-1 mr-3 text-[var(--color-olive-300)]" size={20} />
                 <span>
-                  Tumaini Kiage Boys High School<br />
+                  Kiage Tumaini Boys High School<br />
                   P.O. Box 123-45678<br />
-                  Kiage, Kenya
+                  Kitutu Chache South, Kisii County<br />
+                  Nyanza, Kenya
                 </span>
               </li>
               <li className="flex items-center">
@@ -129,7 +130,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-gray-700 pt-6 sm:pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm sm:text-base">&copy; {new Date().getFullYear()} Tumaini Kiage Boys High School. All rights reserved.</p>
+          <p className="text-sm sm:text-base">&copy; {new Date().getFullYear()} Kiage Tumaini Boys High School. All rights reserved.</p>
           <div className="mt-4 md:mt-0 flex flex-wrap justify-center">
             <Link href="/privacy-policy" className="text-xs sm:text-sm text-gray-400 hover:text-white transition-colors mx-2 my-1">
               Privacy Policy
