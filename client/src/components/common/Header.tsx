@@ -30,7 +30,7 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-md">
+    <header className="sticky top-0 z-50 bg-[var(--color-black-900)] shadow-md">
       {/* Top Bar */}
       <div className="bg-primary text-white">
         <div className="container py-2 flex flex-wrap justify-between items-center">
@@ -86,12 +86,12 @@ const Header = () => {
         
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center space-x-6">
-          <Link href="/" className={`font-semibold hover:text-primary border-b-2 ${isActive("/")} hover:border-primary transition-colors py-2`}>
+          <Link href="/" className={`font-semibold text-white hover:text-primary border-b-2 ${isActive("/")} hover:border-primary transition-colors py-2`}>
             Home
           </Link>
           
           <div className="relative group">
-            <button className={`font-semibold hover:text-primary border-b-2 ${location.startsWith("/about") ? "border-primary" : "border-transparent"} hover:border-primary transition-colors py-2 flex items-center`}>
+            <button className={`font-semibold text-white hover:text-primary border-b-2 ${location.startsWith("/about") ? "border-primary" : "border-transparent"} hover:border-primary transition-colors py-2 flex items-center`}>
               About <ChevronDown size={16} className="ml-1" />
             </button>
             <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md py-2 z-50 hidden group-hover:block">
@@ -111,7 +111,7 @@ const Header = () => {
           </div>
           
           <div className="relative group">
-            <button className={`font-semibold hover:text-primary border-b-2 ${location.startsWith("/academics") ? "border-primary" : "border-transparent"} hover:border-primary transition-colors py-2 flex items-center`}>
+            <button className={`font-semibold text-white hover:text-primary border-b-2 ${location.startsWith("/academics") ? "border-primary" : "border-transparent"} hover:border-primary transition-colors py-2 flex items-center`}>
               Academics <ChevronDown size={16} className="ml-1" />
             </button>
             <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md py-2 z-50 hidden group-hover:block">
@@ -134,7 +134,7 @@ const Header = () => {
           </div>
           
           <div className="relative group">
-            <button className={`font-semibold hover:text-primary border-b-2 ${location.startsWith("/admissions") ? "border-primary" : "border-transparent"} hover:border-primary transition-colors py-2 flex items-center`}>
+            <button className={`font-semibold text-white hover:text-primary border-b-2 ${location.startsWith("/admissions") ? "border-primary" : "border-transparent"} hover:border-primary transition-colors py-2 flex items-center`}>
               Admissions <ChevronDown size={16} className="ml-1" />
             </button>
             <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md py-2 z-50 hidden group-hover:block">
@@ -151,7 +151,7 @@ const Header = () => {
           </div>
           
           <div className="relative group">
-            <button className={`font-semibold hover:text-primary border-b-2 ${location.startsWith("/student-life") ? "border-primary" : "border-transparent"} hover:border-primary transition-colors py-2 flex items-center`}>
+            <button className={`font-semibold text-white hover:text-primary border-b-2 ${location.startsWith("/student-life") ? "border-primary" : "border-transparent"} hover:border-primary transition-colors py-2 flex items-center`}>
               Student Life <ChevronDown size={16} className="ml-1" />
             </button>
             <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md py-2 z-50 hidden group-hover:block">
@@ -170,11 +170,11 @@ const Header = () => {
             </div>
           </div>
           
-          <Link href="/news-events" className={`font-semibold hover:text-primary border-b-2 ${isActive("/news-events")} hover:border-primary transition-colors py-2`}>
+          <Link href="/news-events" className={`font-semibold text-white hover:text-primary border-b-2 ${isActive("/news-events")} hover:border-primary transition-colors py-2`}>
             News & Events
           </Link>
           
-          <Link href="/contact" className={`font-semibold hover:text-primary border-b-2 ${isActive("/contact")} hover:border-primary transition-colors py-2`}>
+          <Link href="/contact" className={`font-semibold text-white hover:text-primary border-b-2 ${isActive("/contact")} hover:border-primary transition-colors py-2`}>
             Contact
           </Link>
         </nav>
@@ -182,12 +182,12 @@ const Header = () => {
       
       {/* Mobile Navigation Menu */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden bg-white border-t shadow-md">
+        <div className="lg:hidden bg-[var(--color-black-900)] border-t border-gray-800 shadow-md">
           <div className="container py-3">
             <nav className="flex flex-col space-y-3">
               <Link
                 href="/"
-                className="font-semibold hover:text-primary py-2"
+                className="font-semibold text-white hover:text-primary py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Home
@@ -195,7 +195,7 @@ const Header = () => {
               
               <div className="mobile-dropdown">
                 <button 
-                  className="w-full text-left font-semibold hover:text-primary py-2 flex justify-between items-center"
+                  className="w-full text-left font-semibold text-white hover:text-primary py-2 flex justify-between items-center"
                   onClick={() => toggleMobileDropdown("about")}
                 >
                   About 
@@ -205,28 +205,28 @@ const Header = () => {
                   <div className="pl-4 mt-2 space-y-2">
                     <Link 
                       href="/about" 
-                      className="block py-2 hover:text-primary"
+                      className="block py-2 text-gray-300 hover:text-primary"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       Our History
                     </Link>
                     <Link 
                       href="/about/mission-vision" 
-                      className="block py-2 hover:text-primary"
+                      className="block py-2 text-gray-300 hover:text-primary"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       Mission & Vision
                     </Link>
                     <Link 
                       href="/about/leadership" 
-                      className="block py-2 hover:text-primary"
+                      className="block py-2 text-gray-300 hover:text-primary"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       Leadership
                     </Link>
                     <Link 
                       href="/about/facilities" 
-                      className="block py-2 hover:text-primary"
+                      className="block py-2 text-gray-300 hover:text-primary"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       School Facilities
@@ -237,7 +237,7 @@ const Header = () => {
               
               <div className="mobile-dropdown">
                 <button 
-                  className="w-full text-left font-semibold hover:text-primary py-2 flex justify-between items-center"
+                  className="w-full text-left font-semibold text-white hover:text-primary py-2 flex justify-between items-center"
                   onClick={() => toggleMobileDropdown("academics")}
                 >
                   Academics 
@@ -247,35 +247,35 @@ const Header = () => {
                   <div className="pl-4 mt-2 space-y-2">
                     <Link 
                       href="/academics" 
-                      className="block py-2 hover:text-primary"
+                      className="block py-2 text-gray-300 hover:text-primary"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       Curriculum
                     </Link>
                     <Link 
                       href="/academics/departments" 
-                      className="block py-2 hover:text-primary"
+                      className="block py-2 text-gray-300 hover:text-primary"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       Departments
                     </Link>
                     <Link 
                       href="/academics/calendar" 
-                      className="block py-2 hover:text-primary"
+                      className="block py-2 text-gray-300 hover:text-primary"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       Academic Calendar
                     </Link>
                     <Link 
                       href="/academics/examination" 
-                      className="block py-2 hover:text-primary"
+                      className="block py-2 text-gray-300 hover:text-primary"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       Examination Policy
                     </Link>
                     <Link 
                       href="/academics/kcse-results" 
-                      className="block py-2 hover:text-primary"
+                      className="block py-2 text-gray-300 hover:text-primary"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       KCSE Yearly Results
@@ -286,7 +286,7 @@ const Header = () => {
               
               <div className="mobile-dropdown">
                 <button 
-                  className="w-full text-left font-semibold hover:text-primary py-2 flex justify-between items-center"
+                  className="w-full text-left font-semibold text-white hover:text-primary py-2 flex justify-between items-center"
                   onClick={() => toggleMobileDropdown("admissions")}
                 >
                   Admissions 
@@ -296,21 +296,21 @@ const Header = () => {
                   <div className="pl-4 mt-2 space-y-2">
                     <Link 
                       href="/admissions" 
-                      className="block py-2 hover:text-primary"
+                      className="block py-2 text-gray-300 hover:text-primary"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       Admission Process
                     </Link>
                     <Link 
                       href="/admissions/requirements" 
-                      className="block py-2 hover:text-primary"
+                      className="block py-2 text-gray-300 hover:text-primary"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       Requirements
                     </Link>
                     <Link 
                       href="/admissions/apply" 
-                      className="block py-2 hover:text-primary"
+                      className="block py-2 text-gray-300 hover:text-primary"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       Apply Now
@@ -321,7 +321,7 @@ const Header = () => {
               
               <div className="mobile-dropdown">
                 <button 
-                  className="w-full text-left font-semibold hover:text-primary py-2 flex justify-between items-center"
+                  className="w-full text-left font-semibold text-white hover:text-primary py-2 flex justify-between items-center"
                   onClick={() => toggleMobileDropdown("student-life")}
                 >
                   Student Life 
@@ -331,28 +331,28 @@ const Header = () => {
                   <div className="pl-4 mt-2 space-y-2">
                     <Link 
                       href="/student-life/clubs" 
-                      className="block py-2 hover:text-primary"
+                      className="block py-2 text-gray-300 hover:text-primary"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       Clubs & Societies
                     </Link>
                     <Link 
                       href="/student-life/sports" 
-                      className="block py-2 hover:text-primary"
+                      className="block py-2 text-gray-300 hover:text-primary"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       Sports & Athletics
                     </Link>
                     <Link 
                       href="/student-life/arts" 
-                      className="block py-2 hover:text-primary"
+                      className="block py-2 text-gray-300 hover:text-primary"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       Arts & Culture
                     </Link>
                     <Link 
                       href="/student-life/community" 
-                      className="block py-2 hover:text-primary"
+                      className="block py-2 text-gray-300 hover:text-primary"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       Community Service
@@ -363,7 +363,7 @@ const Header = () => {
               
               <Link
                 href="/news-events"
-                className="font-semibold hover:text-primary py-2"
+                className="font-semibold text-white hover:text-primary py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 News & Events
@@ -371,7 +371,7 @@ const Header = () => {
               
               <Link
                 href="/contact"
-                className="font-semibold hover:text-primary py-2"
+                className="font-semibold text-white hover:text-primary py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Contact
