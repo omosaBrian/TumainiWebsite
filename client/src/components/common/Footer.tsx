@@ -22,16 +22,16 @@ const Footer = () => {
             </div>
             <p className="mb-4 text-sm sm:text-base">Nurturing young men of integrity, knowledge, and purpose since 1970.</p>
             <div className="flex space-x-4">
-              <a href="#" className="text-white hover:text-[#FFD700] transition-colors" aria-label="Facebook">
+              <a href="#" className="text-white hover:text-emerald-300 transition-colors" aria-label="Facebook">
                 <Facebook size={18} />
               </a>
-              <a href="#" className="text-white hover:text-[#FFD700] transition-colors" aria-label="Twitter">
+              <a href="#" className="text-white hover:text-emerald-300 transition-colors" aria-label="Twitter">
                 <Twitter size={18} />
               </a>
-              <a href="#" className="text-white hover:text-[#FFD700] transition-colors" aria-label="Instagram">
+              <a href="#" className="text-white hover:text-emerald-300 transition-colors" aria-label="Instagram">
                 <Instagram size={18} />
               </a>
-              <a href="#" className="text-white hover:text-[#FFD700] transition-colors" aria-label="YouTube">
+              <a href="#" className="text-white hover:text-emerald-300 transition-colors" aria-label="YouTube">
                 <Youtube size={18} />
               </a>
             </div>
@@ -41,37 +41,37 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/about" className="hover:text-[#FFD700] transition-colors">
+                <Link href="/about" className="hover:text-emerald-300 transition-colors">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/admissions" className="hover:text-[#FFD700] transition-colors">
+                <Link href="/admissions" className="hover:text-emerald-300 transition-colors">
                   Admissions
                 </Link>
               </li>
               <li>
-                <Link href="/academics" className="hover:text-[#FFD700] transition-colors">
+                <Link href="/academics" className="hover:text-emerald-300 transition-colors">
                   Academic Programs
                 </Link>
               </li>
               <li>
-                <Link href="/student-life" className="hover:text-[#FFD700] transition-colors">
+                <Link href="/student-life" className="hover:text-emerald-300 transition-colors">
                   Student Life
                 </Link>
               </li>
               <li>
-                <Link href="/news-events" className="hover:text-[#FFD700] transition-colors">
+                <Link href="/news-events" className="hover:text-emerald-300 transition-colors">
                   News & Events
                 </Link>
               </li>
               <li>
-                <Link href="/gallery" className="hover:text-[#FFD700] transition-colors">
+                <Link href="/gallery" className="hover:text-emerald-300 transition-colors">
                   Gallery
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-[#FFD700] transition-colors">
+                <Link href="/contact" className="hover:text-emerald-300 transition-colors">
                   Contact Us
                 </Link>
               </li>
@@ -82,7 +82,7 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-4">Contact Information</h3>
             <ul className="space-y-2">
               <li className="flex items-start">
-                <MapPin className="mt-1 mr-3 text-[#FFD700]" size={20} />
+                <MapPin className="mt-1 mr-3 text-emerald-300" size={20} />
                 <span>
                   Tumaini Kiage Boys High School<br />
                   P.O. Box 123-45678<br />
@@ -90,11 +90,11 @@ const Footer = () => {
                 </span>
               </li>
               <li className="flex items-center">
-                <Phone className="mr-3 text-[#FFD700]" size={20} />
+                <Phone className="mr-3 text-emerald-300" size={20} />
                 <span>+254 7XX XXX XXX</span>
               </li>
               <li className="flex items-center">
-                <Mail className="mr-3 text-[#FFD700]" size={20} />
+                <Mail className="mr-3 text-emerald-300" size={20} />
                 <span>info@tumainikaige.ac.ke</span>
               </li>
             </ul>
@@ -104,21 +104,21 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-4">School Hours</h3>
             <ul className="space-y-2">
               <li className="flex items-center">
-                <Clock className="mr-3 text-[#FFD700]" size={20} />
+                <Clock className="mr-3 text-emerald-300" size={20} />
                 <div>
                   <span className="block font-semibold">Monday - Friday</span>
                   <span className="block">8:00 AM - 4:30 PM</span>
                 </div>
               </li>
               <li className="flex items-center">
-                <Clock className="mr-3 text-[#FFD700]" size={20} />
+                <Clock className="mr-3 text-emerald-300" size={20} />
                 <div>
                   <span className="block font-semibold">Saturday</span>
                   <span className="block">8:00 AM - 12:00 PM</span>
                 </div>
               </li>
               <li className="flex items-center">
-                <Clock className="mr-3 text-[#FFD700]" size={20} />
+                <Clock className="mr-3 text-emerald-300" size={20} />
                 <div>
                   <span className="block font-semibold">Sunday</span>
                   <span className="block">Closed</span>
