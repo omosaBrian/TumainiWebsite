@@ -43,14 +43,14 @@ const Header = () => {
             </a>
           </div>
           <div className="flex items-center space-x-3 sm:space-x-4 w-full justify-center md:w-auto md:justify-end text-center">
-            <Link href="/alumni" className="text-xs sm:text-sm hover:text-white/80 transition-colors">
-              Alumni
+            <Link href="/about" className="text-xs sm:text-sm hover:text-white/80 transition-colors">
+              About
             </Link>
-            <Link href="/careers" className="text-xs sm:text-sm hover:text-white/80 transition-colors">
-              Careers
+            <Link href="/admissions" className="text-xs sm:text-sm hover:text-white/80 transition-colors">
+              Admissions
             </Link>
-            <Link href="/portal" className="text-xs sm:text-sm hover:text-white/80 transition-colors">
-              Portal Login
+            <Link href="/contact" className="text-xs sm:text-sm hover:text-white/80 transition-colors">
+              Contact
             </Link>
           </div>
         </div>

@@ -66,8 +66,8 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/alumni" className="hover:text-[#FFD700] transition-colors">
-                  Alumni
+                <Link href="/gallery" className="hover:text-[#FFD700] transition-colors">
+                  Gallery
                 </Link>
               </li>
               <li>
