@@ -12,27 +12,27 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-[#333333] text-white pt-16 pb-8">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+    <footer className="bg-[#333333] text-white pt-12 sm:pt-16 pb-6 sm:pb-8">
+      <div className="container">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8 sm:mb-12">
           <div>
             {/* School Logo */}
-            <div className="h-16 w-32 bg-primary text-white flex items-center justify-center rounded mb-4">
-              TKBHS
+            <div className="h-14 w-28 sm:h-16 sm:w-32 bg-primary text-white flex items-center justify-center rounded shadow-sm mb-4">
+              <span className="font-bold">TKBHS</span>
             </div>
-            <p className="mb-4">Nurturing young men of integrity, knowledge, and purpose since 1970.</p>
+            <p className="mb-4 text-sm sm:text-base">Nurturing young men of integrity, knowledge, and purpose since 1970.</p>
             <div className="flex space-x-4">
-              <a href="#" className="text-white hover:text-[#FFD700] transition-colors">
-                <Facebook size={20} />
+              <a href="#" className="text-white hover:text-[#FFD700] transition-colors" aria-label="Facebook">
+                <Facebook size={18} />
               </a>
-              <a href="#" className="text-white hover:text-[#FFD700] transition-colors">
-                <Twitter size={20} />
+              <a href="#" className="text-white hover:text-[#FFD700] transition-colors" aria-label="Twitter">
+                <Twitter size={18} />
               </a>
-              <a href="#" className="text-white hover:text-[#FFD700] transition-colors">
-                <Instagram size={20} />
+              <a href="#" className="text-white hover:text-[#FFD700] transition-colors" aria-label="Instagram">
+                <Instagram size={18} />
               </a>
-              <a href="#" className="text-white hover:text-[#FFD700] transition-colors">
-                <Youtube size={20} />
+              <a href="#" className="text-white hover:text-[#FFD700] transition-colors" aria-label="YouTube">
+                <Youtube size={18} />
               </a>
             </div>
           </div>
@@ -128,16 +128,16 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p>&copy; {new Date().getFullYear()} Tumaini Kiage Boys High School. All rights reserved.</p>
-          <div className="mt-4 md:mt-0">
-            <Link href="/privacy-policy" className="text-sm text-gray-400 hover:text-white transition-colors mx-2">
+        <div className="border-t border-gray-700 pt-6 sm:pt-8 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-sm sm:text-base">&copy; {new Date().getFullYear()} Tumaini Kiage Boys High School. All rights reserved.</p>
+          <div className="mt-4 md:mt-0 flex flex-wrap justify-center">
+            <Link href="/privacy-policy" className="text-xs sm:text-sm text-gray-400 hover:text-white transition-colors mx-2 my-1">
               Privacy Policy
             </Link>
-            <Link href="/terms-of-service" className="text-sm text-gray-400 hover:text-white transition-colors mx-2">
+            <Link href="/terms-of-service" className="text-xs sm:text-sm text-gray-400 hover:text-white transition-colors mx-2 my-1">
               Terms of Service
             </Link>
-            <Link href="/sitemap" className="text-sm text-gray-400 hover:text-white transition-colors mx-2">
+            <Link href="/sitemap" className="text-xs sm:text-sm text-gray-400 hover:text-white transition-colors mx-2 my-1">
               Sitemap
             </Link>
           </div>

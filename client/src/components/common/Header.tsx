@@ -33,23 +33,23 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-white shadow-md">
       {/* Top Bar */}
       <div className="bg-primary text-white">
-        <div className="container mx-auto px-4 py-2 flex justify-between items-center">
+        <div className="container py-2 flex flex-wrap justify-between items-center">
           <div className="hidden md:flex items-center space-x-4">
-            <a href="tel:+254700000000" className="text-sm hover:text-secondary transition-colors flex items-center gap-1">
+            <a href="tel:+254700000000" className="text-sm hover:text-white/80 transition-colors flex items-center gap-1">
               <Phone size={16} /> +254 7XX XXX XXX
             </a>
-            <a href="mailto:info@tumainikaige.ac.ke" className="text-sm hover:text-secondary transition-colors flex items-center gap-1">
+            <a href="mailto:info@tumainikaige.ac.ke" className="text-sm hover:text-white/80 transition-colors flex items-center gap-1">
               <Mail size={16} /> info@tumainikaige.ac.ke
             </a>
           </div>
-          <div className="flex items-center space-x-4">
-            <Link href="/alumni" className="text-sm hover:text-secondary transition-colors">
+          <div className="flex items-center space-x-3 sm:space-x-4 w-full justify-center md:w-auto md:justify-end text-center">
+            <Link href="/alumni" className="text-xs sm:text-sm hover:text-white/80 transition-colors">
               Alumni
             </Link>
-            <Link href="/careers" className="text-sm hover:text-secondary transition-colors">
+            <Link href="/careers" className="text-xs sm:text-sm hover:text-white/80 transition-colors">
               Careers
             </Link>
-            <Link href="/portal" className="text-sm hover:text-secondary transition-colors">
+            <Link href="/portal" className="text-xs sm:text-sm hover:text-white/80 transition-colors">
               Portal Login
             </Link>
           </div>
@@ -57,17 +57,17 @@ const Header = () => {
       </div>
       
       {/* Main Navigation */}
-      <div className="container mx-auto px-4 py-3 flex flex-wrap justify-between items-center">
+      <div className="container py-3 flex flex-wrap justify-between items-center">
         <div className="flex items-center">
           <Link href="/">
             <div className="flex items-center">
               {/* Placeholder for School Logo */}
-              <div className="h-16 w-28 bg-primary text-white flex items-center justify-center rounded">
-                TKBHS
+              <div className="h-14 w-24 sm:h-16 sm:w-28 bg-primary text-white flex items-center justify-center rounded shadow-sm">
+                <span className="font-bold">TKBHS</span>
               </div>
-              <div className="ml-4 hidden lg:block">
-                <h1 className="text-xl font-bold text-primary">Tumaini Kiage</h1>
-                <h2 className="text-sm font-medium text-foreground">Boys High School</h2>
+              <div className="ml-3 md:ml-4 hidden sm:block">
+                <h1 className="text-lg md:text-xl font-bold text-primary">Tumaini Kiage</h1>
+                <h2 className="text-xs md:text-sm font-medium text-foreground">Boys High School</h2>
               </div>
             </div>
           </Link>
@@ -79,6 +79,7 @@ const Header = () => {
           size="icon" 
           className="lg:hidden text-primary" 
           onClick={toggleMobileMenu}
+          aria-label="Toggle menu"
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </Button>
@@ -184,9 +185,9 @@ const Header = () => {
       
       {/* Mobile Navigation Menu */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden bg-white border-t">
-          <div className="container mx-auto px-4 py-3">
-            <nav className="flex flex-col space-y-4">
+        <div className="lg:hidden bg-white border-t shadow-md">
+          <div className="container py-3">
+            <nav className="flex flex-col space-y-3">
               <Link
                 href="/"
                 className="font-semibold hover:text-primary py-2"
