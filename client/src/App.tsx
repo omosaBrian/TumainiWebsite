@@ -12,6 +12,7 @@ import NewsEvents from "@/pages/news-events";
 import Faculty from "@/pages/faculty";
 import Contact from "@/pages/contact";
 import Gallery from "@/pages/gallery";
+import KCSEResults from "@/pages/academics/kcse-results";
 import MainLayout from "./layouts/MainLayout";
 
 function Router() {
@@ -20,6 +21,7 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/about" component={About} />
       <Route path="/academics" component={Academics} />
+      <Route path="/academics/kcse-results" component={KCSEResults} />
       <Route path="/admissions" component={Admissions} />
       <Route path="/student-life" component={StudentLife} />
       <Route path="/news-events" component={NewsEvents} />

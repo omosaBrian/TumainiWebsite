@@ -127,6 +127,9 @@ const Header = () => {
               <Link href="/academics/examination" className="block px-4 py-2 hover:bg-[var(--color-olive-300)/10] hover:text-primary">
                 Examination Policy
               </Link>
+              <Link href="/academics/kcse-results" className="block px-4 py-2 hover:bg-[var(--color-olive-300)/10] hover:text-primary">
+                KCSE Yearly Results
+              </Link>
             </div>
           </div>
           
@@ -140,12 +143,6 @@ const Header = () => {
               </Link>
               <Link href="/admissions/requirements" className="block px-4 py-2 hover:bg-[var(--color-olive-300)/10] hover:text-primary">
                 Requirements
-              </Link>
-              <Link href="/admissions/fees" className="block px-4 py-2 hover:bg-[var(--color-olive-300)/10] hover:text-primary">
-                Fees Structure
-              </Link>
-              <Link href="/admissions/scholarships" className="block px-4 py-2 hover:bg-[var(--color-olive-300)/10] hover:text-primary">
-                Scholarships
               </Link>
               <Link href="/admissions/apply" className="block px-4 py-2 hover:bg-[var(--color-olive-300)/10] hover:text-primary">
                 Apply Now
@@ -276,6 +273,13 @@ const Header = () => {
                     >
                       Examination Policy
                     </Link>
+                    <Link 
+                      href="/academics/kcse-results" 
+                      className="block py-2 hover:text-primary"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      KCSE Yearly Results
+                    </Link>
                   </div>
                 )}
               </div>
@@ -303,20 +307,6 @@ const Header = () => {
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       Requirements
-                    </Link>
-                    <Link 
-                      href="/admissions/fees" 
-                      className="block py-2 hover:text-primary"
-                      onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                      Fees Structure
-                    </Link>
-                    <Link 
-                      href="/admissions/scholarships" 
-                      className="block py-2 hover:text-primary"
-                      onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                      Scholarships
                     </Link>
                     <Link 
                       href="/admissions/apply" 
