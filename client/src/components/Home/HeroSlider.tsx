@@ -20,7 +20,7 @@ const slides: Slide[] = [
     subtitle: "Private Boys High School in Kisii, Kenya",
     buttonText: "Book A Tour",
     buttonLink: "/contact",
-    overlayColor: "rgba(0, 0, 0, 0.5)"
+    overlayColor: "rgba(153, 27, 27, 0.5)" // Changed from black to rich red
   },
   {
     image: "https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=900&q=80",
@@ -28,7 +28,7 @@ const slides: Slide[] = [
     subtitle: "Shaping Future Leaders in Kisii County",
     buttonText: "Our Academics",
     buttonLink: "/academics",
-    overlayColor: "rgba(0, 0, 0, 0.45)"
+    overlayColor: "rgba(153, 27, 27, 0.45)" // Changed from black to rich red
   },
   {
     image: "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=900&q=80",
@@ -36,7 +36,7 @@ const slides: Slide[] = [
     subtitle: "Nurturing Values, Discipline, and Leadership",
     buttonText: "About Us",
     buttonLink: "/about",
-    overlayColor: "rgba(0, 0, 0, 0.4)"
+    overlayColor: "rgba(153, 27, 27, 0.4)" // Changed from black to rich red
   },
 ];
 
@@ -166,7 +166,7 @@ const HeroSlider = () => {
                   style={{ opacity: loadedImages.includes(index) ? 1 : 0 }}
                 />
                 <div 
-                  className="absolute inset-0 flex items-center justify-center bg-gradient-to-b from-black/30 to-black/70"
+                  className="absolute inset-0 flex items-center justify-center bg-gradient-to-b from-red-900/30 to-red-900/70"
                   style={{ backgroundColor: slide.overlayColor }}
                 />
               </div>
