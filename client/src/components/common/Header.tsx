@@ -95,16 +95,16 @@ const Header = () => {
               About <ChevronDown size={16} className="ml-1" />
             </button>
             <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md py-2 z-50 hidden group-hover:block">
-              <Link href="/about" className="block px-4 py-2 hover:bg-gray-50 hover:text-primary">
+              <Link href="/about" className="block px-4 py-2 hover:bg-[var(--color-olive-300)/10] hover:text-primary">
                 Our History
               </Link>
-              <Link href="/about/mission-vision" className="block px-4 py-2 hover:bg-gray-50 hover:text-primary">
+              <Link href="/about/mission-vision" className="block px-4 py-2 hover:bg-[var(--color-olive-300)/10] hover:text-primary">
                 Mission & Vision
               </Link>
-              <Link href="/about/leadership" className="block px-4 py-2 hover:bg-gray-50 hover:text-primary">
+              <Link href="/about/leadership" className="block px-4 py-2 hover:bg-[var(--color-olive-300)/10] hover:text-primary">
                 Leadership
               </Link>
-              <Link href="/about/facilities" className="block px-4 py-2 hover:bg-gray-50 hover:text-primary">
+              <Link href="/about/facilities" className="block px-4 py-2 hover:bg-[var(--color-olive-300)/10] hover:text-primary">
                 School Facilities
               </Link>
             </div>
@@ -115,16 +115,16 @@ const Header = () => {
               Academics <ChevronDown size={16} className="ml-1" />
             </button>
             <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md py-2 z-50 hidden group-hover:block">
-              <Link href="/academics" className="block px-4 py-2 hover:bg-gray-50 hover:text-primary">
+              <Link href="/academics" className="block px-4 py-2 hover:bg-[var(--color-olive-300)/10] hover:text-primary">
                 Curriculum
               </Link>
-              <Link href="/academics/departments" className="block px-4 py-2 hover:bg-gray-50 hover:text-primary">
+              <Link href="/academics/departments" className="block px-4 py-2 hover:bg-[var(--color-olive-300)/10] hover:text-primary">
                 Departments
               </Link>
-              <Link href="/academics/calendar" className="block px-4 py-2 hover:bg-gray-50 hover:text-primary">
+              <Link href="/academics/calendar" className="block px-4 py-2 hover:bg-[var(--color-olive-300)/10] hover:text-primary">
                 Academic Calendar
               </Link>
-              <Link href="/academics/examination" className="block px-4 py-2 hover:bg-gray-50 hover:text-primary">
+              <Link href="/academics/examination" className="block px-4 py-2 hover:bg-[var(--color-olive-300)/10] hover:text-primary">
                 Examination Policy
               </Link>
             </div>
@@ -135,19 +135,19 @@ const Header = () => {
               Admissions <ChevronDown size={16} className="ml-1" />
             </button>
             <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md py-2 z-50 hidden group-hover:block">
-              <Link href="/admissions" className="block px-4 py-2 hover:bg-gray-50 hover:text-primary">
+              <Link href="/admissions" className="block px-4 py-2 hover:bg-[var(--color-olive-300)/10] hover:text-primary">
                 Admission Process
               </Link>
-              <Link href="/admissions/requirements" className="block px-4 py-2 hover:bg-gray-50 hover:text-primary">
+              <Link href="/admissions/requirements" className="block px-4 py-2 hover:bg-[var(--color-olive-300)/10] hover:text-primary">
                 Requirements
               </Link>
-              <Link href="/admissions/fees" className="block px-4 py-2 hover:bg-gray-50 hover:text-primary">
+              <Link href="/admissions/fees" className="block px-4 py-2 hover:bg-[var(--color-olive-300)/10] hover:text-primary">
                 Fees Structure
               </Link>
-              <Link href="/admissions/scholarships" className="block px-4 py-2 hover:bg-gray-50 hover:text-primary">
+              <Link href="/admissions/scholarships" className="block px-4 py-2 hover:bg-[var(--color-olive-300)/10] hover:text-primary">
                 Scholarships
               </Link>
-              <Link href="/admissions/apply" className="block px-4 py-2 hover:bg-gray-50 hover:text-primary">
+              <Link href="/admissions/apply" className="block px-4 py-2 hover:bg-[var(--color-olive-300)/10] hover:text-primary">
                 Apply Now
               </Link>
             </div>
@@ -158,16 +158,16 @@ const Header = () => {
               Student Life <ChevronDown size={16} className="ml-1" />
             </button>
             <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md py-2 z-50 hidden group-hover:block">
-              <Link href="/student-life/clubs" className="block px-4 py-2 hover:bg-gray-50 hover:text-primary">
+              <Link href="/student-life/clubs" className="block px-4 py-2 hover:bg-[var(--color-olive-300)/10] hover:text-primary">
                 Clubs & Societies
               </Link>
-              <Link href="/student-life/sports" className="block px-4 py-2 hover:bg-gray-50 hover:text-primary">
+              <Link href="/student-life/sports" className="block px-4 py-2 hover:bg-[var(--color-olive-300)/10] hover:text-primary">
                 Sports & Athletics
               </Link>
-              <Link href="/student-life/arts" className="block px-4 py-2 hover:bg-gray-50 hover:text-primary">
+              <Link href="/student-life/arts" className="block px-4 py-2 hover:bg-[var(--color-olive-300)/10] hover:text-primary">
                 Arts & Culture
               </Link>
-              <Link href="/student-life/community" className="block px-4 py-2 hover:bg-gray-50 hover:text-primary">
+              <Link href="/student-life/community" className="block px-4 py-2 hover:bg-[var(--color-olive-300)/10] hover:text-primary">
                 Community Service
               </Link>
             </div>

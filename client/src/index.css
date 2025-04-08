@@ -15,6 +15,12 @@
     @apply font-sans antialiased bg-background text-foreground;
     font-family: 'Inter', sans-serif;
   }
+
+  :root {
+    --color-olive-300: #BAC94A;
+    --color-olive-400: #A2B02D;
+    --color-olive-500: #889624;
+  }
 }
 
 @layer components {
